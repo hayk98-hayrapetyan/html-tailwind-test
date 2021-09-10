@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Tailwind CSS Test</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="flex items-center justify-between px-18 py-6 mb-5 border-b border-lightWhite">
+    <ul class="flex items-center">
+        <li class="mr-11">
+            <a href="#">
+                <img src="images/logo.png" alt="logo" class="mr-11" />
+            </a>
+        </li>
+        <li class="mr-11">
+            <a href="#" class="text-mainBlack font-extrabold font-body text-sm"> DASHBOARD </a>
+        </li>
+        <li class="mr-11">
+            <a href="#" class="text-mainBlack font-extrabold font-body text-sm"> ACCOUNTS </a>
+        </li>
+        <li class="mr-11">
+            <a href="#" class="text-mainBlack font-extrabold font-body text-sm"> ANALYTICS </a>
+        </li>
+        <li class="mr-11">
+            <a href="#" class="text-mainBlack font-extrabold font-body text-sm"> UGC </a>
+        </li>
+        <li class="mr-11">
+            <a href="#" class="text-mainBlack font-extrabold font-body text-sm"> INFLUENCER </a>
+        </li>
+        <li class="mr-11">
+            <a href="#" class="text-mainBlack font-extrabold font-body text-sm"> SETTINGS </a>
+        </li>
+    </ul>
+
+    <div class="flex items-center flex-nowrap cursor-pointer">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0C8.95312 0 0 8.95312 0 20C0 31.0469 8.95312 40 20 40C31.0469 40 40 31.0469 40 20C40 8.95312 31.0469 0 20 0ZM20 37.5C16.3094 37.5 12.8875 36.3453 10.0625 34.3875C10.3828 30.5391 13.5781 27.5 17.5 27.5H22.5C26.4258 27.5 29.6203 30.5422 29.9383 34.3875C27.1094 36.3438 23.6875 37.5 20 37.5ZM32.1641 32.5547C31.0625 28.2266 27.1641 25 22.5 25H17.5C12.8336 25 8.9375 28.2266 7.83594 32.5563C4.55234 29.3047 2.5 24.9219 2.5 20C2.5 10.3516 10.3516 2.5 20 2.5C29.6484 2.5 37.5 10.3516 37.5 20C37.5 24.9219 35.4453 29.3047 32.1641 32.5547ZM20 10C16.5469 10 13.75 12.7969 13.75 16.25C13.75 19.7031 16.5469 22.5 20 22.5C23.4531 22.5 26.25 19.7016 26.25 16.25C26.25 12.7969 23.4531 10 20 10ZM20 20C17.9297 20 16.25 18.3203 16.25 16.25C16.25 14.1797 17.9297 12.5 20 12.5C22.0703 12.5 23.75 14.182 23.75 16.25C23.75 18.318 22.0703 20 20 20Z" fill="#3FB990"/>
+        </svg>
+        <span class="text-mainBlack font-extrabold font-body text-lg ml-3 mr-8">Luca</span>
+
+        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.29291 6.29285L9.29291 1.29285" stroke="#3A3A3A" stroke-width="2"/>
+            <path d="M0.707092 1.29285L5.7071 6.29285" stroke="#3A3A3A" stroke-width="2"/>
+        </svg>
+    </div>
+</nav>
+
+<main class="px-18 py-6">
+    <ul class="flex items-center mb-12">
+        <li class="mr-11">
+            <a href="#" class="text-mainBlack font-bold font-body text-sm"> Subscriptions </a>
+        </li>
+        <li class="mr-11 border-b-2 border-mainBlack">
+            <a href="#" class="text-mainBlack font-bold font-body text-sm"> Add Subscription </a>
+        </li>
+        <li class="mr-11">
+            <a href="#" class="text-mainBlack font-bold font-body text-sm"> Sources </a>
+        </li>
+    </ul>
+    <h4 class="text-mainBlack font-bold font-body text-2xl mb-2.5">SUBSCRIPTION DATA</h4>
+    <div class="grid grid-cols-4 gap-x-5 gap-y-3 mb-8">
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">Name</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10"></div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">TYPE</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center">
+                <span class="text-mainBlack font-semibold font-body text-sm">Please select</span>
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                    <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+                </svg>
+            </div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">SUBSCRIPTION START</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex items-center">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.53 14.52H1.41C1.16242 14.52 0.924829 14.4223 0.74883 14.2482C0.57283 14.0741 0.472633 13.8376 0.469999 13.59V4.37C0.469999 4.23739 0.522678 4.11021 0.616446 4.01644C0.710214 3.92267 0.837391 3.87 0.969999 3.87H15C15.1326 3.87 15.2598 3.92267 15.3536 4.01644C15.4473 4.11021 15.5 4.23739 15.5 4.37V13.59C15.5001 13.7156 15.4748 13.8399 15.4256 13.9554C15.3764 14.0709 15.3043 14.1753 15.2136 14.2622C15.123 14.3491 15.0157 14.4167 14.8982 14.461C14.7807 14.5053 14.6555 14.5254 14.53 14.52ZM1.47 4.87V13.59L14.53 13.52L14.47 4.87H1.47Z" fill="#3A3A3A"/>
+                    <path d="M15 4.87H1C0.867392 4.87 0.740215 4.81732 0.646447 4.72355C0.552679 4.62979 0.5 4.50261 0.5 4.37V1.92C0.505002 1.67928 0.602179 1.44967 0.771495 1.27849C0.94081 1.10731 1.16935 1.00763 1.41 1H3.26C3.39261 1 3.51979 1.05268 3.61355 1.14645C3.70732 1.24021 3.76 1.36739 3.76 1.5C3.76 1.63261 3.70732 1.75979 3.61355 1.85355C3.51979 1.94732 3.39261 2 3.26 2H1.41V3.89H14.41V1.92L12.67 2C12.5374 2 12.4102 1.94732 12.3164 1.85355C12.2227 1.75979 12.17 1.63261 12.17 1.5C12.17 1.36739 12.2227 1.24021 12.3164 1.14645C12.4102 1.05268 12.5374 1 12.67 1H14.53C14.7776 1.00263 15.0141 1.10283 15.1882 1.27883C15.3624 1.45483 15.46 1.69242 15.46 1.94V4.37C15.4604 4.49596 15.4133 4.61743 15.328 4.71013C15.2427 4.80283 15.1256 4.85992 15 4.87Z" fill="#3A3A3A"/>
+                    <path d="M10.86 2H5.07C4.93739 2 4.81021 1.94732 4.71645 1.85355C4.62268 1.75979 4.57 1.63261 4.57 1.5C4.57 1.36739 4.62268 1.24021 4.71645 1.14645C4.81021 1.05268 4.93739 1 5.07 1H10.86C10.9926 1 11.1198 1.05268 11.2136 1.14645C11.3073 1.24021 11.36 1.36739 11.36 1.5C11.36 1.63261 11.3073 1.75979 11.2136 1.85355C11.1198 1.94732 10.9926 2 10.86 2Z" fill="#3A3A3A"/>
+                    <path d="M12.22 0.0200195H11.3C11.057 0.0200195 10.86 0.217014 10.86 0.46002V2.50002C10.86 2.74302 11.057 2.94002 11.3 2.94002H12.22C12.463 2.94002 12.66 2.74302 12.66 2.50002V0.46002C12.66 0.217014 12.463 0.0200195 12.22 0.0200195Z" fill="#3A3A3A"/>
+                    <path d="M4.62 0.0200195H3.7C3.45699 0.0200195 3.26 0.217014 3.26 0.46002V2.50002C3.26 2.74302 3.45699 2.94002 3.7 2.94002H4.62C4.86301 2.94002 5.06 2.74302 5.06 2.50002V0.46002C5.06 0.217014 4.86301 0.0200195 4.62 0.0200195Z" fill="#3A3A3A"/>
+                    <path d="M12.73 6.98004H11.64C11.4854 6.98004 11.36 7.1054 11.36 7.26004V8.35004C11.36 8.50468 11.4854 8.63004 11.64 8.63004H12.73C12.8846 8.63004 13.01 8.50468 13.01 8.35004V7.26004C13.01 7.1054 12.8846 6.98004 12.73 6.98004Z" fill="#3A3A3A"/>
+                    <path d="M9.92 6.98004H8.83C8.67536 6.98004 8.55 7.1054 8.55 7.26004V8.35004C8.55 8.50468 8.67536 8.63004 8.83 8.63004H9.92C10.0746 8.63004 10.2 8.50468 10.2 8.35004V7.26004C10.2 7.1054 10.0746 6.98004 9.92 6.98004Z" fill="#3A3A3A"/>
+                    <path d="M7.1 6.98004H6.01C5.85536 6.98004 5.73 7.1054 5.73 7.26004V8.35004C5.73 8.50468 5.85536 8.63004 6.01 8.63004H7.1C7.25464 8.63004 7.38 8.50468 7.38 8.35004V7.26004C7.38 7.1054 7.25464 6.98004 7.1 6.98004Z" fill="#3A3A3A"/>
+                    <path d="M9.92 9.76001H8.83C8.67536 9.76001 8.55 9.88537 8.55 10.04V11.13C8.55 11.2846 8.67536 11.41 8.83 11.41H9.92C10.0746 11.41 10.2 11.2846 10.2 11.13V10.04C10.2 9.88537 10.0746 9.76001 9.92 9.76001Z" fill="#3A3A3A"/>
+                    <path d="M7.1 9.76001H6.01C5.85536 9.76001 5.73 9.88537 5.73 10.04V11.13C5.73 11.2846 5.85536 11.41 6.01 11.41H7.1C7.25464 11.41 7.38 11.2846 7.38 11.13V10.04C7.38 9.88537 7.25464 9.76001 7.1 9.76001Z" fill="#3A3A3A"/>
+                    <path d="M4.29 9.76001H3.2C3.04536 9.76001 2.92 9.88537 2.92 10.04V11.13C2.92 11.2846 3.04536 11.41 3.2 11.41H4.29C4.44464 11.41 4.57 11.2846 4.57 11.13V10.04C4.57 9.88537 4.44464 9.76001 4.29 9.76001Z" fill="#3A3A3A"/>
+                </svg>
+                <span class="text-mainBlack font-semibold font-body text-sm ml-2">05/04/2021 </span>
+            </div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">SUBSCRIPTION END</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex items-center">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.53 14.52H1.41C1.16242 14.52 0.924829 14.4223 0.74883 14.2482C0.57283 14.0741 0.472633 13.8376 0.469999 13.59V4.37C0.469999 4.23739 0.522678 4.11021 0.616446 4.01644C0.710214 3.92267 0.837391 3.87 0.969999 3.87H15C15.1326 3.87 15.2598 3.92267 15.3536 4.01644C15.4473 4.11021 15.5 4.23739 15.5 4.37V13.59C15.5001 13.7156 15.4748 13.8399 15.4256 13.9554C15.3764 14.0709 15.3043 14.1753 15.2136 14.2622C15.123 14.3491 15.0157 14.4167 14.8982 14.461C14.7807 14.5053 14.6555 14.5254 14.53 14.52ZM1.47 4.87V13.59L14.53 13.52L14.47 4.87H1.47Z" fill="#3A3A3A"/>
+                    <path d="M15 4.87H1C0.867392 4.87 0.740215 4.81732 0.646447 4.72355C0.552679 4.62979 0.5 4.50261 0.5 4.37V1.92C0.505002 1.67928 0.602179 1.44967 0.771495 1.27849C0.94081 1.10731 1.16935 1.00763 1.41 1H3.26C3.39261 1 3.51979 1.05268 3.61355 1.14645C3.70732 1.24021 3.76 1.36739 3.76 1.5C3.76 1.63261 3.70732 1.75979 3.61355 1.85355C3.51979 1.94732 3.39261 2 3.26 2H1.41V3.89H14.41V1.92L12.67 2C12.5374 2 12.4102 1.94732 12.3164 1.85355C12.2227 1.75979 12.17 1.63261 12.17 1.5C12.17 1.36739 12.2227 1.24021 12.3164 1.14645C12.4102 1.05268 12.5374 1 12.67 1H14.53C14.7776 1.00263 15.0141 1.10283 15.1882 1.27883C15.3624 1.45483 15.46 1.69242 15.46 1.94V4.37C15.4604 4.49596 15.4133 4.61743 15.328 4.71013C15.2427 4.80283 15.1256 4.85992 15 4.87Z" fill="#3A3A3A"/>
+                    <path d="M10.86 2H5.07C4.93739 2 4.81021 1.94732 4.71645 1.85355C4.62268 1.75979 4.57 1.63261 4.57 1.5C4.57 1.36739 4.62268 1.24021 4.71645 1.14645C4.81021 1.05268 4.93739 1 5.07 1H10.86C10.9926 1 11.1198 1.05268 11.2136 1.14645C11.3073 1.24021 11.36 1.36739 11.36 1.5C11.36 1.63261 11.3073 1.75979 11.2136 1.85355C11.1198 1.94732 10.9926 2 10.86 2Z" fill="#3A3A3A"/>
+                    <path d="M12.22 0.0200195H11.3C11.057 0.0200195 10.86 0.217014 10.86 0.46002V2.50002C10.86 2.74302 11.057 2.94002 11.3 2.94002H12.22C12.463 2.94002 12.66 2.74302 12.66 2.50002V0.46002C12.66 0.217014 12.463 0.0200195 12.22 0.0200195Z" fill="#3A3A3A"/>
+                    <path d="M4.62 0.0200195H3.7C3.45699 0.0200195 3.26 0.217014 3.26 0.46002V2.50002C3.26 2.74302 3.45699 2.94002 3.7 2.94002H4.62C4.86301 2.94002 5.06 2.74302 5.06 2.50002V0.46002C5.06 0.217014 4.86301 0.0200195 4.62 0.0200195Z" fill="#3A3A3A"/>
+                    <path d="M12.73 6.98004H11.64C11.4854 6.98004 11.36 7.1054 11.36 7.26004V8.35004C11.36 8.50468 11.4854 8.63004 11.64 8.63004H12.73C12.8846 8.63004 13.01 8.50468 13.01 8.35004V7.26004C13.01 7.1054 12.8846 6.98004 12.73 6.98004Z" fill="#3A3A3A"/>
+                    <path d="M9.92 6.98004H8.83C8.67536 6.98004 8.55 7.1054 8.55 7.26004V8.35004C8.55 8.50468 8.67536 8.63004 8.83 8.63004H9.92C10.0746 8.63004 10.2 8.50468 10.2 8.35004V7.26004C10.2 7.1054 10.0746 6.98004 9.92 6.98004Z" fill="#3A3A3A"/>
+                    <path d="M7.1 6.98004H6.01C5.85536 6.98004 5.73 7.1054 5.73 7.26004V8.35004C5.73 8.50468 5.85536 8.63004 6.01 8.63004H7.1C7.25464 8.63004 7.38 8.50468 7.38 8.35004V7.26004C7.38 7.1054 7.25464 6.98004 7.1 6.98004Z" fill="#3A3A3A"/>
+                    <path d="M9.92 9.76001H8.83C8.67536 9.76001 8.55 9.88537 8.55 10.04V11.13C8.55 11.2846 8.67536 11.41 8.83 11.41H9.92C10.0746 11.41 10.2 11.2846 10.2 11.13V10.04C10.2 9.88537 10.0746 9.76001 9.92 9.76001Z" fill="#3A3A3A"/>
+                    <path d="M7.1 9.76001H6.01C5.85536 9.76001 5.73 9.88537 5.73 10.04V11.13C5.73 11.2846 5.85536 11.41 6.01 11.41H7.1C7.25464 11.41 7.38 11.2846 7.38 11.13V10.04C7.38 9.88537 7.25464 9.76001 7.1 9.76001Z" fill="#3A3A3A"/>
+                    <path d="M4.29 9.76001H3.2C3.04536 9.76001 2.92 9.88537 2.92 10.04V11.13C2.92 11.2846 3.04536 11.41 3.2 11.41H4.29C4.44464 11.41 4.57 11.2846 4.57 11.13V10.04C4.57 9.88537 4.44464 9.76001 4.29 9.76001Z" fill="#3A3A3A"/>
+                </svg>
+                <span class="text-mainBlack font-semibold font-body text-sm ml-2">05/04/2021 </span>
+            </div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">ACCOUNT MANAGER</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center">
+                <span class="text-mainBlack font-semibold font-body text-sm">Please select</span>
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                    <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+                </svg>
+            </div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">CATEGORY</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-end items-center">
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                    <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+                </svg>
+            </div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">LANGUAGE</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center">
+                <span class="text-mainBlack font-semibold font-body text-sm">English</span>
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                    <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+                </svg>
+            </div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">STATUS</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center">
+                <span class="text-mainBlack font-semibold font-body text-sm">Created</span>
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                    <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="text-mainBlack font-bold font-body text-2xl mb-2.5">COMPANY DATA</h4>
+    <div class="grid grid-cols-4 gap-x-5 gap-y-3 items-end mb-8">
+        <div>
+            <div class="border-1.5 border-mainBlack w-full rounded-10 px-3 py-2.5 flex justify-between items-center">
+                <span class="text-mainBlack font-bold font-body text-sm ml-8">LOGO UPLOAD</span>
+                <div class="w-100 h-100 border border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-burnBlue font-semibold font-body text-sm underline">BROWSE</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">NAME (LONG)</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center"></div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">NAME (SHORT)</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center"></div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">WEBSITE</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center"></div>
+        </div>
+    </div>
+
+    <h4 class="text-mainBlack font-bold font-body text-2xl mb-2.5">ADD SUBSCRIPTION ADMIN</h4>
+    <div class="grid grid-cols-4 gap-x-5 gap-y-3 items-end mb-6">
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">COMPANY</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center"></div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">LAST NAME</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center"></div>
+        </div>
+        <div>
+            <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">EMAIL</h6>
+            <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center"></div>
+        </div>
+        <div class="grid grid-cols-2 gap-x-2.5">
+            <button class="border-1.5 border-burnBlue text-burnBlue text-sm h-9 rounded-10">SEARCH</button>
+            <button class="border-1.5 border-lightWhite text-lightWhite text-sm h-9 rounded-10">INVITE</button>
+        </div>
+    </div>
+
+    <table class="w-full text-left mb-8">
+        <thead>
+            <tr class="border-b-2 border-lightWhite">
+                <th class="w-1/4 text-mainBlack font-bold font-body text-sm">COMPANY</th>
+                <th class="w-1/4 text-mainBlack font-bold font-body text-sm">LAST NAME</th>
+                <th class="w-1/4 text-mainBlack font-bold font-body text-sm">EMAIL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-b-2 border-lightWhite h-16">
+                <td class="w-1/4 text-mainBlack font-semibold font-body text-sm">Squarelovin</td>
+                <td class="w-1/4 text-mainBlack font-semibold font-body text-sm">Resch</td>
+                <td class="w-1/4 text-mainBlack font-semibold font-body text-sm">bb@squarelovin.com</td>
+                <td class="w-1/4 text-mainBlack font-semibold font-body text-sm">
+                    <button class="border-1.5 border-burnBlue text-burnBlue text-sm h-9 rounded-10 w-full">ADD ADMIN</button>
+                </td>
+            </tr>
+            <tr class="border-b-2 border-lightWhite h-16">
+                <td class="w-1/4 text-mainBlack font-semibold font-body text-sm">Squarelovin</td>
+                <td class="w-1/4 text-mainBlack font-semibold font-body text-sm">Resch</td>
+                <td class="w-1/4 text-mainBlack font-semibold font-body text-sm">bb@squarelovin.com</td>
+                <td class="w-1/4 text-mainBlack font-semibold font-body text-sm">
+                    <button class="border-1.5 border-burnBlue text-burnBlue text-sm h-9 rounded-10 w-full">ADD ADMIN</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4 class="text-mainBlack font-bold font-body text-2xl mb-2.5">DOMAIN LANGUAGES</h4>
+    <div class="grid grid-cols-4 gap-x-5 gap-y-3 mb-8">
+        <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center">
+            <span class="text-mainBlack font-semibold font-body text-sm">ar-eg</span>
+            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+            </svg>
+        </div>
+        <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center">
+            <span class="text-mainBlack font-semibold font-body text-sm">ar-eg</span>
+            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+            </svg>
+        </div>
+        <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center">
+            <span class="text-mainBlack font-semibold font-body text-sm">fr-ch</span>
+            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+            </svg>
+        </div>
+        <div class="border-1.5 border-mainBlack w-full h-9 rounded-10 px-3 py-2.5 flex justify-between items-center">
+            <span class="text-mainBlack font-semibold font-body text-sm">de-de</span>
+            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.353553" y1="0.646447" x2="4.35355" y2="4.64645" stroke="black"/>
+                <line x1="3.64645" y1="4.64645" x2="7.64645" y2="0.646447" stroke="black"/>
+            </svg>
+        </div>
+    </div>
+
+    <h4 class="text-mainBlack font-bold font-body text-2xl mb-2.5">SECTIONS</h4>
+
+    <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">PRE-COLLECTOR</h6>
+    <div class="flex mb-3">
+        <button class="bg-burnBlue text-white font-bold font-body text-sm h-9 w-36 rounded-10 mr-5">Collector</button>
+        <button class="bg-burnBlue text-white font-bold font-body text-sm h-9 w-36 rounded-10 mr-5">Accepted Media</button>
+        <button class="bg-burnBlue text-white font-bold font-body text-sm h-9 w-36 rounded-10 mr-5">Removed Media</button>
+    </div>
+
+    <h6 class="text-mainBlack font-bold font-body text-sm mb-0.5">MEDIA</h6>
+    <div class="flex mb-3">
+        <button class="bg-mainRed text-white font-bold font-body text-sm h-9 w-36 rounded-10 mr-5">Collector</button>
+        <button class="bg-mainRed text-white font-bold font-body text-sm h-9 w-36 rounded-10 mr-5">Get Rights</button>
+        <button class="bg-burnBlue text-white font-bold font-body text-sm h-9 w-36 rounded-10 mr-5">Removed Media</button>
+    </div>
+</main>
+
+</body>
+</html>
